@@ -1,3 +1,7 @@
 export default function capitalize(string) {
-  return string;
+  if (string) {
+    return string;
+  } else {
+    throw new Error();
+  }
 }
