@@ -1,3 +1,9 @@
 import capitalize from "./capitalize.js";
 
-console.log(capitalize("pikachu"));
+test("function returns something", () => {
+  expect(capitalize("a")).toBeTruthy();
+});
+
+test("function returns error with no input", () => {
+  expect(() => capitalize()).toThrow(Error);
+});
